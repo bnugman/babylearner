@@ -24,11 +24,11 @@ public class GUIMain {
 		// the learner can be a meta-learner, which combines simpler learners 
 		
 		Learner learner =  
-			new NaiveBayesLearner();
+			// new NaiveBayesLearner();
 
 			// new Rule1RLearner(); 
 			
-			/*
+			
 			new BoostLearner(new LearnerFactory(){
 				public Learner createLearner() {
 					
@@ -36,7 +36,7 @@ public class GUIMain {
 							new Rule1RLearner():
 								new NaiveBayesLearner();
 			}}) ;
-			*/
+			
 		
 		learner.learn(data);
 

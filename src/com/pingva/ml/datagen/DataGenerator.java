@@ -2,8 +2,6 @@ package com.pingva.ml.datagen;
 
 
 public class DataGenerator {
-
-	
 	
 	public static LearningData makeData() {
 
@@ -22,8 +20,8 @@ public class DataGenerator {
 	
 	static private Distro[] sampleDistroSimpleBayesian(){
 		return new Distro[]{
-				new GaussianDistro(new float[]{0.35f,0.35f}, new float [][]{{0.08f,0.0f},{0.0f,0.04f}}),
-				new GaussianDistro(new float[]{0.65f,0.65f}, new float [][]{{0.05f,0.0f},{0.0f,0.07f}}),
+				new GaussianDistro(new float[]{0.45f,0.45f}, new float [][]{{0.08f,-0.03f},{-0.03f,0.04f}}),
+				new GaussianDistro(new float[]{0.55f,0.55f}, new float [][]{{0.08f,-0.03f},{-0.03f,0.04f}}),
 		};
 	}
 	

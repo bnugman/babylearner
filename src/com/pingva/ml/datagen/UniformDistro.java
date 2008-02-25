@@ -1,6 +1,5 @@
 package com.pingva.ml.datagen;
 
-import java.util.Arrays;
 
 
 public class UniformDistro implements Distro {
@@ -17,11 +16,11 @@ public class UniformDistro implements Distro {
 			throw new IllegalArgumentException("arrays are of different sizes");
 		len = starts.length;
 		
-		this.starts = Arrays.copyOf(starts, len);
-		this.widths = Arrays.copyOf(ends, len);
+		this.starts = new float[len];
+		this.widths = new float[len];
 		
 		for (int i = 0; i < len; i++) {
-			widths[i]-=starts[i];			
+			widths[i] = ends[i] - starts[i] ;			
 		}
 		
 	}
